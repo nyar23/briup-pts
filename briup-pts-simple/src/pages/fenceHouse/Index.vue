@@ -239,7 +239,6 @@ export default {
       this.drawer = true;
     },
     toCancel() {
-
       this.resetForm('ruleForm');
       // 隐藏抽屉
       this.drawer = false;
@@ -267,14 +266,13 @@ export default {
             this.toSearch();
             // 表单
             this.toCancel();
-            console.log(this.ruleForm);
+            // console.log(this.ruleForm);
           } else {
             //失败
             this.$notify.error({
               title: '保存失败',
               message: res.message,
             });
-            this.toCancel();
           }
         } else {
           console.log('error submit!!');
@@ -296,12 +294,6 @@ export default {
       this.resetForm('ruleForm');
       done();
     },
-    // handleSizeChange(val) {
-    //   console.log(`每页 ${val} 条`);
-    // },
-    // handleCurrentChange(val) {
-    //   console.log(`当前页: ${val}`);
-    // },
     handleClick(row) {
       console.log(row);
     },
@@ -320,7 +312,6 @@ export default {
         }
       }
       let res = await findFence(temp);
-      console.log(res);
       this.tableData = res.data.list;
       this.total = res.data.total;
     }
