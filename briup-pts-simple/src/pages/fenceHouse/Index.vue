@@ -241,6 +241,11 @@ export default {
     toCancel() {
       this.resetForm('ruleForm');
       // 隐藏抽屉
+      this.ruleForm.fhDesc = '';
+      this.ruleForm.fhId = '';
+      this.ruleForm.fhName = '';
+      this.ruleForm.fhTime = '';
+
       this.drawer = false;
     },
     toSearch() {
