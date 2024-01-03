@@ -23,12 +23,16 @@
         </el-table-column>
         <el-table-column prop="grMechanism" label="检疫机构" width="180">
         </el-table-column>
-        <el-table-column prop="grImg" label="检疫图片">
+        <el-table-column align="center" width="120" prop="grImg" label="检疫图片">
           <template slot-scope="scope">
-            <img style="width:60px;height:40px;" :src="scope.row.grImg" alt="">
-            <!-- <img src="https://img2.baidu.com/it/u=673003775,1191479950&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" alt=""> -->
+            <el-popover placement="right" title="" trigger="hover">
+              <img :src="scope.row.grImg" style="height: 200px;width: 200px">
+              <img style="width:80px;height:50px;" :src="scope.row.grImg" alt="" slot="reference">
+              <!-- <img src="https://img2.baidu.com/it/u=673003775,1191479950&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" alt=""> -->
+            </el-popover>
           </template>
         </el-table-column>
+
         <el-table-column prop="grTime" label="检疫时间">
         </el-table-column>
         <el-table-column prop="bQualified" label="检疫结果">

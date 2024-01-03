@@ -143,9 +143,9 @@ export const constantRoutes = [
         ]
     },
     {
-        path: "/quarantineRegistration",
+        path: "/static-pages",
         component: Layout,
-        redirect: "/quarantineRegistration/Index",
+        redirect: "/static-pages/dataAnalysis",
         meta: {
             title: "特色农产品销售管理平台",
             icon: "icon_17",
@@ -153,9 +153,9 @@ export const constantRoutes = [
         },
         children: [
             {
-                path: "Index",
-                component: () => import("@/pages/quarantineRegistration/Index"),
-                name: "quarantineRegistrationIndex",
+                path: "ProductShow",
+                component: () => import("@/pages/static-pages/ProductShow"),
+                name: "ProductShow",
                 meta: {
                     title: "产品展示",
                     icon: "icon_18",
@@ -163,9 +163,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "Index",
-                component: () => import("@/pages/quarantineRegistration/Index"),
-                name: "quarantineRegistrationIndex",
+                path: "OrderManagement",
+                component: () => import("@/pages/static-pages/OrderManagement"),
+                name: "OrderManagement",
                 meta: {
                     title: "订单管理",
                     icon: "icon_19",
@@ -173,9 +173,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "Index",
-                component: () => import("@/pages/quarantineRegistration/Index"),
-                name: "quarantineRegistrationIndex",
+                path: "InventoryManagement",
+                component: () => import("@/pages/static-pages/InventoryManagement"),
+                name: "InventoryManagement",
                 meta: {
                     title: "库存管理",
                     icon: "icon_20",
@@ -183,9 +183,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "Index",
-                component: () => import("@/pages/quarantineRegistration/Index"),
-                name: "quarantineRegistrationIndex",
+                path: "LogisticsManagement",
+                component: () => import("@/pages/static-pages/LogisticsManagement"),
+                name: "LogisticsManagement",
                 meta: {
                     title: "物流管理",
                     icon: "icon_15",
@@ -193,9 +193,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "Index",
-                component: () => import("@/pages/quarantineRegistration/Index"),
-                name: "quarantineRegistrationIndex",
+                path: "UserManagement",
+                component: () => import("@/pages/static-pages/UserManagement"),
+                name: "UserManagement",
                 meta: {
                     title: "用户管理",
                     icon: "icon_14",
@@ -203,9 +203,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "Index",
-                component: () => import("@/pages/quarantineRegistration/Index"),
-                name: "quarantineRegistrationIndex",
+                path: "DataAnalysis",
+                component: () => import("@/pages/static-pages/DataAnalysis"),
+                name: "DataAnalysis",
                 meta: {
                     title: "数据分析",
                     icon: "icon_13",
