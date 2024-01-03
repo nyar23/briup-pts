@@ -18,7 +18,7 @@
       <el-col :span="tablecol">
         <!-- 操作行 -->
         <div class="options-div">
-          <el-button type="primary" @click="toAdd" >添加</el-button>
+          <el-button type="primary" @click="toAdd">添加</el-button>
           <el-button type="danger" @click="toBatchDelete">批量删除</el-button>
           <el-input style="width: 150px;" placeholder="请输入栏舍名称" v-model="searchParams.fhName" clearable>
           </el-input>
@@ -241,6 +241,11 @@ export default {
     toCancel() {
       this.resetForm('ruleForm');
       // 隐藏抽屉
+      this.ruleForm.fhDesc = '';
+      this.ruleForm.fhId = '';
+      this.ruleForm.fhName = '';
+      this.ruleForm.fhTime = '';
+
       this.drawer = false;
     },
     toSearch() {
@@ -283,9 +288,7 @@ export default {
     // 显示抽屉函数
     toAdd() {
       //显示抽屉
-      
       this.drawer = true;
-      this.resetForm("ruleFrom");
     },
     // 重置抽屉表单函数
     resetForm(formName) {
