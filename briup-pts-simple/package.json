@@ -67,6 +67,7 @@
     "screenfull": "4.2.0",
     "showdown": "1.9.0",
     "sortablejs": "1.8.4",
+    "swiper": "^5.4.5",
     "vant": "^2.5.2",
     "vue": "2.6.10",
     "vue-count-to": "1.0.13",
