@@ -2,9 +2,9 @@
   <!-- 操作行 -->
   <div>
 
-    <div class="first">
-      <el-button type="primary" @click="toAdd">添加</el-button>
-      <el-button type="danger" @click="tochangeStatusBatch">批量启用/禁用</el-button>
+    <div style="height:45px" class="first">
+      <el-button style="height: 36px;" type="primary" @click="toAdd">添加</el-button>
+      <el-button style="height: 36px;" type="danger" @click="tochangeStatusBatch">批量启用/禁用</el-button>
 
       <el-input style="width: 130px;" placeholder="请输入栏圈名称" v-model="searchParams.hName" clearable> </el-input>
 
