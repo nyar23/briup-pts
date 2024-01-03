@@ -153,9 +153,9 @@ export const constantRoutes = [
         },
         children: [
             {
-                path: "ProductShow",
-                component: () => import("@/pages/static-pages/ProductShow"),
-                name: "ProductShow",
+                path: "productShow",
+                component: () => import("@/pages/static-pages/productShow"),
+                name: "productShow",
                 meta: {
                     title: "产品展示",
                     icon: "icon_18",
@@ -163,9 +163,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "OrderManagement",
-                component: () => import("@/pages/static-pages/OrderManagement"),
-                name: "OrderManagement",
+                path: "orderManagement",
+                component: () => import("@/pages/static-pages/orderManagement"),
+                name: "orderManagement",
                 meta: {
                     title: "订单管理",
                     icon: "icon_19",
@@ -173,9 +173,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "InventoryManagement",
-                component: () => import("@/pages/static-pages/InventoryManagement"),
-                name: "InventoryManagement",
+                path: "inventoryManagement",
+                component: () => import("@/pages/static-pages/inventoryManagement"),
+                name: "inventoryManagement",
                 meta: {
                     title: "库存管理",
                     icon: "icon_20",
@@ -183,9 +183,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "LogisticsManagement",
-                component: () => import("@/pages/static-pages/LogisticsManagement"),
-                name: "LogisticsManagement",
+                path: "logisticsManagement",
+                component: () => import("@/pages/static-pages/logisticsManagement"),
+                name: "logisticsManagement",
                 meta: {
                     title: "物流管理",
                     icon: "icon_15",
@@ -193,9 +193,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "UserManagement",
-                component: () => import("@/pages/static-pages/UserManagement"),
-                name: "UserManagement",
+                path: "userManagement",
+                component: () => import("@/pages/static-pages/userManagement"),
+                name: "userManagement",
                 meta: {
                     title: "用户管理",
                     icon: "icon_14",
@@ -203,9 +203,9 @@ export const constantRoutes = [
                 }
             },
             {
-                path: "DataAnalysis",
-                component: () => import("@/pages/static-pages/DataAnalysis"),
-                name: "DataAnalysis",
+                path: "dataAnalysis",
+                component: () => import("@/pages/static-pages/dataAnalysis"),
+                name: "dataAnalysis",
                 meta: {
                     title: "数据分析",
                     icon: "icon_13",
