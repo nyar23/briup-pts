@@ -2,7 +2,7 @@
  * @Author: WangChuDongDong 126376386+WangChuDongDong@users.noreply.github.com
  * @Date: 2023-12-29 17:07:14
  * @LastEditors: WangChuDongDong 126376386+WangChuDongDong@users.noreply.github.com
- * @LastEditTime: 2024-01-03 15:04:36
+ * @LastEditTime: 2024-01-03 16:18:39
  * @FilePath: \briup-pts-simple\src\pages\TnimalMange\Index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -35,7 +35,6 @@
     <!-- 表格 -->
 
     <div>
-      {{ multipleSelection }}
       <el-table ref="multipleTable" :data="tableData" border style="width: 100%"
         @selection-change="handleSelectionChange">
         <el-table-column prop="" type="selection" width="55">
@@ -60,15 +59,15 @@
         </el-table-column>
 
         <!-- 性别 -->
-        <el-table-column prop="aGender" label="性别" width="80" align="center">
+        <el-table-column prop="aGender" label="性别" width="70" align="center">
         </el-table-column>
 
         <!-- 健康状态 -->
-        <el-table-column prop="aHealthy" label="健康状态" width="95" align="center">
+        <el-table-column prop="aHealthy" label="健康状态" width="85" align="center">
         </el-table-column>
 
         <!-- 过程状态 -->
-        <el-table-column prop="aStatus" label="过程状态" width="95" align="center">
+        <el-table-column prop="aStatus" label="过程状态" width="85" align="center">
         </el-table-column>
 
         <!-- 疫苗接种状态 -->
@@ -184,6 +183,8 @@ import QRCode from "qrcodejs2";
 export default {
   data() {
     return {//data开始
+
+      qrCodeText: "",
       multipleSelection: [],
 
       total: 0,
@@ -195,6 +196,8 @@ export default {
 
       // 新增功能
       ruleForm: {
+        // 动物编号
+        aAnimalId: "",
         // 初始体重
         aWeight: "",
         // 性别
@@ -426,9 +429,13 @@ export default {
 
       this.tableData = res.data.list;
       this.total = res.data.total;
-      this.tableData.forEach(item => {
-        item.url = this.bindQRCode(tableData.aBatchId);
-      })
+      this.tableData.forEach((item, index) => {
+        // 假设每个item都有一个唯一的animalId属性  
+        let animalId = item.aAnimalId;
+        let qrCodeText = `http://124.223.22.76/briup-pts-simple-source/index.html?animalId=${animalId}`;
+        this.qrCodeText = qrCodeText; // 更新全局的qrCodeText属性，以便于在所有地方使用  
+        item.url = this.bindQRCode(animalId); // 直接将animalId作为参数传递给bindQRCode方法  
+      });
     },
     //修改：设置表单数据 展示抽屉
     handleEdit(row) {
@@ -477,21 +484,19 @@ export default {
       done();
     },
 
-    bindQRCode() {
+    bindQRCode(animalId) {
       let qrCodeImage = new QRCode(this.$refs.qrCodeUrl, {
-        text: `http://124.223.22.76/briup-pts-simple-source/index.html?animalId=`,
+        text: `http://124.223.22.76/briup-pts-simple-source/index.html?animalId=${animalId}`, // 使用传递的animalId来生成二维码的URL  
         width: 200,
         height: 200,
-        colorDark: "#333333", //二维码颜色
-        colorLight: "#ffffff", //二维码背景色
-        correctLevel: QRCode.CorrectLevel.L //容错率，L/M/H
+        colorDark: "#333333", // 二维码颜色    
+        colorLight: "#ffffff", // 二维码背景色    
+        correctLevel: QRCode.CorrectLevel.L // 容错率，L/M/H    
       });
       return qrCodeImage._oDrawing._elCanvas.toDataURL("image/png");
     },
-
-
+    // 其他方法...    
   },
-
 
   created() {
     this.init();
