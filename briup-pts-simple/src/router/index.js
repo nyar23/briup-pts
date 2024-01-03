@@ -142,6 +142,78 @@ export const constantRoutes = [
             }
         ]
     },
+    {
+        path: "/quarantineRegistration",
+        component: Layout,
+        redirect: "/quarantineRegistration/Index",
+        meta: {
+            title: "特色农产品销售管理平台",
+            icon: "icon_17",
+            affix: true
+        },
+        children: [
+            {
+                path: "Index",
+                component: () => import("@/pages/quarantineRegistration/Index"),
+                name: "quarantineRegistrationIndex",
+                meta: {
+                    title: "产品展示",
+                    icon: "icon_18",
+                    affix: true
+                }
+            },
+            {
+                path: "Index",
+                component: () => import("@/pages/quarantineRegistration/Index"),
+                name: "quarantineRegistrationIndex",
+                meta: {
+                    title: "订单管理",
+                    icon: "icon_19",
+                    affix: true
+                }
+            },
+            {
+                path: "Index",
+                component: () => import("@/pages/quarantineRegistration/Index"),
+                name: "quarantineRegistrationIndex",
+                meta: {
+                    title: "库存管理",
+                    icon: "icon_20",
+                    affix: true
+                }
+            },
+            {
+                path: "Index",
+                component: () => import("@/pages/quarantineRegistration/Index"),
+                name: "quarantineRegistrationIndex",
+                meta: {
+                    title: "物流管理",
+                    icon: "icon_15",
+                    affix: true
+                }
+            },
+            {
+                path: "Index",
+                component: () => import("@/pages/quarantineRegistration/Index"),
+                name: "quarantineRegistrationIndex",
+                meta: {
+                    title: "用户管理",
+                    icon: "icon_14",
+                    affix: true
+                }
+            },
+            {
+                path: "Index",
+                component: () => import("@/pages/quarantineRegistration/Index"),
+                name: "quarantineRegistrationIndex",
+                meta: {
+                    title: "数据分析",
+                    icon: "icon_13",
+                    affix: true
+                }
+            },
+        ]
+    },
 ];
 
 const createRouter = () =>

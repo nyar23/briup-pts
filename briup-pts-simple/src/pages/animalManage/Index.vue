@@ -37,15 +37,15 @@
     <div>
       <el-table ref="multipleTable" :data="tableData" border style="width: 100%"
         @selection-change="handleSelectionChange">
-        <el-table-column prop="" type="selection" width="55">
+        <el-table-column fixed="left" prop="" type="selection" width="55">
         </el-table-column>
 
         <!-- 序号 -->
-        <el-table-column label="序号" type="index" width="50">
+        <el-table-column fixed="left" label="序号" type="index" width="50">
         </el-table-column>
 
         <!-- 编号 -->
-        <el-table-column prop="aAnimalId" label="编号" width="280">
+        <el-table-column fixed="left" prop="aAnimalId" label="编号" width="280">
         </el-table-column>
 
         <el-table-column prop="url" label="二维码" width="95" height="95">
@@ -91,10 +91,10 @@
         </el-table-column>
 
         <!-- 操作 -->
-        <el-table-column label="操作" width="150">
+        <el-table-column fixed="right" label="操作" width="150">
           <template slot-scope="scope">
-            <el-button type="text" @click="handleEdit(scope.row)">编辑</el-button>
-            <el-button type="text" @click="handleDelete(scope.row)">删除</el-button>
+            <el-button type="text" @click="handleDelete(scope.row)">移除</el-button>
+            <el-button type="text" @click="handleEdit(scope.row)">修改</el-button>
           </template>
         </el-table-column>
 
