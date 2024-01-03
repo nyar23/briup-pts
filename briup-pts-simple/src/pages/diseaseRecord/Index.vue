@@ -61,7 +61,7 @@
     </div>
     <!-- 抽屉 -->
     <div>
-      <el-drawer title="添加病症记录信息" :visible.sync="drawer" :direction="rtl" :before-close="handleClose" size='35%'>
+      <el-drawer title="添加病症记录信息" :visible.sync="drawer" :before-close="handleClose" size='35%'>
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
           <el-form-item style="padding-left: 20px;" label="动物编号" prop="drAnimalId">
             <el-input v-model="ruleForm.drAnimalId"></el-input>
