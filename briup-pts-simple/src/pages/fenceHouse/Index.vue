@@ -266,7 +266,7 @@ export default {
             });
             this.toSearch();
             // 表单
-            toCancel();
+            this.toCancel();
           } else {
             //失败
             this.$notify.error({
