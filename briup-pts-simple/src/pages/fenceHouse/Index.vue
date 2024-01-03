@@ -62,7 +62,7 @@
           </el-pagination>
         </div>
       </el-col>
-      <!-- 添加弹窗 -->
+      <!-- 添加抽屉 -->
       <el-drawer title="添加栏舍信息" :visible.sync="drawer" :direction="direction" :before-close="handleClose">
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm"
           style="padding-top: 10px;">
