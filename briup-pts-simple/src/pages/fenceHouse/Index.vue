@@ -139,6 +139,7 @@ export default {
       ruleForm: {
         //结果
         "fhName": "",
+        "fhId": "",
         // 创建时间
         "fhTime": "",
         "fhDesc": ""
@@ -257,7 +258,6 @@ export default {
           //获取用户输入的数据 发送给后台进行保存。保存成功后，刷新表格数据，提示用户保存成功，隐藏抽屉
           //用户输入的数据this.ruleForm
           let res = await saveOrUpdate(this.ruleForm);
-          console.log(res, '=====保存结果=====');
           if (res.code == 200) {
             //成功 提示用户 刷新界面
             this.$notify.success({
@@ -267,6 +267,7 @@ export default {
             this.toSearch();
             // 表单
             this.toCancel();
+            console.log(this.ruleForm);
           } else {
             //失败
             this.$notify.error({
