@@ -82,7 +82,7 @@ export const constantRoutes = [
             {
                 path: "Index",
                 component: () => import("@/pages/faGe/Index"),
-                name: "fenceHouseIndex",
+                name: "faGeIndex",
                 meta: {
                     title: "栏舍管理-陆江发",
                     icon: "icon_2",
