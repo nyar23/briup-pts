@@ -12,12 +12,12 @@
                 <div class="swiper-slide">
                     <a href=""><img src="@/assets/img/u=2232023758,3962203133&fm=253&fmt=auto&app=138&f=JPEG.webp"
                             alt=""></a>
-                    <p>关爱动物</p>
+                    <p>小马</p>
                 </div>
                 <div class="swiper-slide">
                     <a href=""><img src="@/assets/img/u=3822517053,1678234878&fm=253&fmt=auto&app=120&f=JPEG.webp"
                             alt=""></a>
-                    <p>傻鸟</p>
+                    <p>小鸟</p>
                 </div>
 
             </div>
@@ -111,7 +111,7 @@ body {
     width: 338px;
     font-size: 25px;
     margin-top: 24px;
-    color: #169aca;
+    color: red;
 }
 
 .focus {
@@ -130,6 +130,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(184, 179, 188)
+    color: red;
 }
 </style>
