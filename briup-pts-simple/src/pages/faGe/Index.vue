@@ -40,8 +40,12 @@
               <el-button slot="reference" @click="handleDetail(scope.row)">详情</el-button>
               <div style="font-weight: bold;">
                 <span>【{{ hurdlesName }}】： 栏舍详情</span>
+                <el-divider></el-divider>
               </div>
-              <div style="font-weight: bold;">栏舍描述：{{ hurdlesDesc }}</div>
+              <div style="font-weight: bold;">
+                栏舍描述：{{ hurdlesDesc }}
+                <el-divider></el-divider>
+              </div>
               <div>
                 栏圈信息：
                 <el-table :data="hurdles">
