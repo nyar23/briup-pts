@@ -70,7 +70,7 @@
                             <span>会员编号：SVIP5555</span>
                             <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
                         </div>
-                        <div>名字：魅儿</div>
+                        <div>名字：富贵</div>
                         <div>电话：55555555-55</div>
                         <div>会员积分：11999</div>
                         <img style="width: 250px;height: 250px;"
