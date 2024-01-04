@@ -184,7 +184,7 @@ export default {
 }
 
 .card-row>* {
-    padding: 10px;
+    padding: 20px;
 }
 
 .block{
