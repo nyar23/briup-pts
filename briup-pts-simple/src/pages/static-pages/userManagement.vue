@@ -6,8 +6,9 @@
     <div style="background-image: url('http://8.134.137.44:7002/images/2024041704350162775.jpg');">
         <!-- 表头搜索 -->
         <div>
-            <div >用户管理</div>
+            
             <div class="options-div">
+                <div class="txt-div">用户管理</div>
                 <el-button type="primary">注册</el-button>
                 <el-button type="danger">批量删除</el-button>
                 <el-input style="width: 150px;" placeholder="请输入会员名字" clearable>
@@ -144,9 +145,9 @@
         </div>
 
         <!-- 分页 -->
-        <div>
+        <div >
             <div class="block">
-                <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
+                <el-pagination  @size-change="handleSizeChange" @current-change="handleCurrentChange"
                     :current-page="currentPage4" :page-sizes="[8, 16, 32, 64]" :page-size="100"
                     layout="total, sizes, prev, pager, next, jumper" :total="400">
                 </el-pagination>
@@ -174,7 +175,7 @@ export default {
     display: flex;
     justify-content: end;
     padding: 10px;
-    opacity: 0.8
+    opacity: 1
 }
 
 .options-div>* {
@@ -183,13 +184,13 @@ export default {
 }
 
 .card-row>* {
-    padding: 10px;
+    padding: 20px;
 }
 
 .block{
      display: flex;
     justify-content: end;
-    opacity: 0.8;
+    opacity: 1;
 }
 .card-div {
     padding: 10px;
@@ -197,5 +198,10 @@ export default {
   opacity: 1;
 }
 
-
+.txt-div{
+    color: white;
+    font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
 </style>
