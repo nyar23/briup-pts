@@ -131,10 +131,10 @@ export default {
           { required: true, message: '请输入动物编号', trigger: 'blur' },
         ],
         drDId: [
-          { required: true, message: '请选择病症', trigger: 'change' }
+          { required: true, message: '请选择病症', trigger: 'blur' }
         ],
         drTime: [
-          { required: true, message: '请选择日期', trigger: 'change' }
+          { required: true, message: '请选择日期', trigger: 'blur' }
         ],
         drDesc: [
           { required: true, message: '请输入病症描述', trigger: 'blur' }
