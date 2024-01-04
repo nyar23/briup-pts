@@ -11,7 +11,7 @@
                 <el-button type="danger">批量删除</el-button>
                 <el-input style="width: 150px;" placeholder="请输入会员名字" clearable>
                 </el-input>
-                <el-button type="text">搜索</el-button>
+                <el-button icon="el-icon-search" circle></el-button>
             </div>
         </div>
         <!-- 卡片 -->
@@ -26,8 +26,8 @@
                         <div>名字：雷龙</div>
                         <div>电话：11198798798798</div>
                         <div>会员积分：999</div>
-                        <img style="width: 250px;height: 300px;"
-                            src="http://8.134.137.44:7002/images/2024041704337335158.jpg" alt="">
+                        <img style="width: 250px;height: 250px;"
+                            src="http://8.134.137.44:7002/images/2024041704352255878.jpeg" alt="">
                         <div>
                         </div>
                     </el-card>
@@ -41,8 +41,8 @@
                         <div>名字：雷龙</div>
                         <div>电话：11198798798798</div>
                         <div>会员积分：999</div>
-                        <img style="width: 250px;height: 300px;"
-                            src="http://8.134.137.44:7002/images/2024041704337335158.jpg" alt="">
+                        <img style="width: 250px;height: 250px;"
+                            src="http://8.134.137.44:7002/images/2024041704352286658.jpeg" alt="">
                         <div>
                         </div>
                     </el-card>
@@ -56,8 +56,8 @@
                         <div>名字：雷龙</div>
                         <div>电话：11198798798798</div>
                         <div>会员积分：999</div>
-                        <img style="width: 250px;height: 300px;"
-                            src="http://8.134.137.44:7002/images/2024041704337335158.jpg" alt="">
+                        <img style="width: 250px;height: 250px;"
+                            src="http://8.134.137.44:7002/images/2024041704352312082.jpeg" alt="">
                         <div>
                         </div>
                     </el-card>
@@ -71,8 +71,8 @@
                         <div>名字：雷龙</div>
                         <div>电话：11198798798798</div>
                         <div>会员积分：999</div>
-                        <img style="width: 250px;height: 300px;"
-                            src="http://8.134.137.44:7002/images/2024041704337335158.jpg" alt="">
+                        <img style="width: 250px;height: 250px;"
+                            src="http://8.134.137.44:7002/images/2024041704352350073.jpeg" alt="">
                         <div>
                         </div>
                     </el-card>
@@ -88,8 +88,8 @@
                         <div>名字：雷龙</div>
                         <div>电话：11198798798798</div>
                         <div>会员积分：999</div>
-                        <img style="width: 250px;height: 300px;"
-                            src="http://8.134.137.44:7002/images/2024041704337948584.jpg" alt="">
+                        <img style="width: 250px;height: 250px;"
+                            src="http://8.134.137.44:7002/images/2024041704352633114.jpeg" alt="">
                         <div>
                         </div>
                     </el-card>
@@ -103,8 +103,8 @@
                         <div>名字：雷龙</div>
                         <div>电话：11198798798798</div>
                         <div>会员积分：999</div>
-                        <img style="width: 250px;height: 300px;"
-                            src="http://8.134.137.44:7002/images/2024041704337948584.jpg" alt="">
+                        <img style="width: 250px;height: 250px;"
+                            src="http://8.134.137.44:7002/images/2024041704352406379.jpeg" alt="">
                         <div>
                         </div>
                     </el-card>
@@ -118,8 +118,8 @@
                         <div>名字：雷龙</div>
                         <div>电话：11198798798798</div>
                         <div>会员积分：999</div>
-                        <img style="width: 250px;height: 300px;"
-                            src="http://8.134.137.44:7002/images/2024041704337948584.jpg" alt="">
+                        <img style="width: 250px;height: 250px;"
+                            src="http://8.134.137.44:7002/images/2024041704352436438.jpeg" alt="">
                         <div>
                         </div>
                     </el-card>
@@ -133,8 +133,8 @@
                         <div>名字：雷龙</div>
                         <div>电话：11198798798798</div>
                         <div>会员积分：999</div>
-                        <img style="width: 250px;height: 300px;"
-                            src="http://8.134.137.44:7002/images/2024041704337948584.jpg" alt="">
+                        <img style="width: 250px;height: 250px;"
+                            src="http://8.134.137.44:7002/images/2024041704352463371.jpeg" alt="">
                         <div>
                         </div>
                     </el-card>
