@@ -3,124 +3,101 @@
  * @Author: yjc
 -->
 <template>
-    <div>
-        <!-- 搜索栏 -->
+    <div class="base">
         <div>
-            <el-tabs v-model="activeName" @tab-click="handleClick">
-                <el-tab-pane label="库存查询" name="first">
-                    <div>
-                        <div class="first">
-                            <el-button type="primary" icon="el-icon-edit" circle>登记</el-button>
-                            <el-button type="danger" icon="el-icon-delete" circle>删除</el-button>
-                            <el-input style="width: 130px;" placeholder="请输入货物名称" v-model="input" clearable> </el-input>
-                            <el-select style="width: 130px;" v-model="value" placeholder="请选择蔬菜或水果" clearable>
-                                <el-option v-for="item in options" :key="item.value" :label="item.label"
-                                    :value="item.value">
-                                </el-option>
-                            </el-select>
-                            <el-button icon="el-icon-search" circle></el-button>
+            <!-- 搜索栏 -->
+            <div>
+                <el-tabs v-model="activeName" @tab-click="handleClick">
+                    <el-tab-pane label="库存查询" name="first">
+                        <div>
+                            <div class="first">
+                                <el-button type="primary" icon="el-icon-edit" circle>登记</el-button>
+                                <el-button type="danger" icon="el-icon-delete" circle>删除</el-button>
+                                <el-input style="width: 130px;" placeholder="请输入货物名称" v-model="input" clearable> </el-input>
+                                <el-select style="width: 130px;" v-model="value" placeholder="请选择蔬菜或水果" clearable>
+                                    <el-option v-for="item in options" :key="item.value" :label="item.label"
+                                        :value="item.value">
+                                    </el-option>
+                                </el-select>
+                                <el-button icon="el-icon-search" circle></el-button>
+
+                            </div>
+
+
 
                         </div>
-
-
-
-                    </div>
-                    <el-table :data="tableData" style="width: 100%">
-                        <el-table-column type="expand">
-                            <template slot-scope="props">
-                                <el-form label-position="left" inline class="demo-table-expand">
-                                    <el-form-item label="货物名称">
-                                        <span>{{ props.row.name }}</span>
-                                    </el-form-item>
-                                    <el-form-item label="所属仓库">
-                                        <span>{{ props.row.shop }}</span>
-                                    </el-form-item>
-                                    <el-form-item label="货物 ID">
-                                        <span>{{ props.row.id }}</span>
-                                    </el-form-item>
-                                    <el-form-item label="仓库 ID">
-                                        <span>{{ props.row.shopId }}</span>
-                                    </el-form-item>
-                                    <el-form-item label="货物分类">
-                                        <span>{{ props.row.category }}</span>
-                                    </el-form-item>
-                                    <el-form-item label="仓库地址">
-                                        <span>{{ props.row.address }}</span>
-                                    </el-form-item>
-                                    <el-form-item label="货物描述">
-                                        <span>{{ props.row.desc }}</span>
-                                    </el-form-item>
-                                    <el-form-item label="货物库存">
-                                        <span>{{ props.row.weight }}</span>
-                                    </el-form-item>
-                                </el-form>
-                            </template>
-                        </el-table-column>
-                        <el-table-column label="货物批次 ID" prop="id">
-                        </el-table-column>
-                        <el-table-column label="货物名称" prop="name">
-                        </el-table-column>
-                        <el-table-column label="所属仓库" prop="shop">
-                        </el-table-column>
-
-                    </el-table>
-
-                    <div class="block">
-                        <el-pagination background layout="prev, pager, next" :total="30">
-                        </el-pagination>
-                    </div>
-
-                </el-tab-pane>
-
-
-
-                <el-tab-pane label="库存预警" name="second">
-
-                    <div>
-                        <el-table :data="inventory" @row-click="handleRowClick">
-                            <el-table-column prop="name" label="货物名称"></el-table-column>
-                            <el-table-column prop="spec" label="仓库"></el-table-column>
-                            <el-table-column prop="unit" label="单位"></el-table-column>
-                            <el-table-column prop="quantity" label="库存数量"></el-table-column>
-                            <el-table-column prop="check" label="检查">
-                                <el-button @click="checkInventory">检查库存</el-button>
+                        <el-table :data="tableData" style="width: 100%">
+                            <el-table-column type="expand">
+                                <template slot-scope="props">
+                                    <el-form label-position="left" inline class="demo-table-expand">
+                                        <el-form-item label="货物名称">
+                                            <span>{{ props.row.name }}</span>
+                                        </el-form-item>
+                                        <el-form-item label="所属仓库">
+                                            <span>{{ props.row.shop }}</span>
+                                        </el-form-item>
+                                        <el-form-item label="货物 ID">
+                                            <span>{{ props.row.id }}</span>
+                                        </el-form-item>
+                                        <el-form-item label="仓库 ID">
+                                            <span>{{ props.row.shopId }}</span>
+                                        </el-form-item>
+                                        <el-form-item label="货物分类">
+                                            <span>{{ props.row.category }}</span>
+                                        </el-form-item>
+                                        <el-form-item label="仓库地址">
+                                            <span>{{ props.row.address }}</span>
+                                        </el-form-item>
+                                        <el-form-item label="货物描述">
+                                            <span>{{ props.row.desc }}</span>
+                                        </el-form-item>
+                                        <el-form-item label="货物库存">
+                                            <span>{{ props.row.weight }}</span>
+                                        </el-form-item>
+                                    </el-form>
+                                </template>
                             </el-table-column>
+                            <el-table-column label="货物批次 ID" prop="id">
+                            </el-table-column>
+                            <el-table-column label="货物名称" prop="name">
+                            </el-table-column>
+                            <el-table-column label="所属仓库" prop="shop">
+                            </el-table-column>
+
                         </el-table>
+                        <!-- 分页 -->
+                        <div class="block">
+                            <el-pagination background layout="prev, pager, next" :total="30">
+                            </el-pagination>
+                        </div>
 
-                    </div>
-                    <div class="red">
-                        <el-pagination background layout="prev, pager, next" :total="30">
-                        </el-pagination>
-                    </div>
-
-
-
+                    </el-tab-pane>
 
 
 
+                    <el-tab-pane label="库存预警" name="second">
 
-                </el-tab-pane>
-            </el-tabs>
+                        <div>
+                            <el-table :data="inventory" @row-click="handleRowClick">
+                                <el-table-column prop="name" label="货物名称"></el-table-column>
+                                <el-table-column prop="spec" label="仓库"></el-table-column>
+                                <el-table-column prop="unit" label="单位"></el-table-column>
+                                <el-table-column prop="quantity" label="库存数量"></el-table-column>
+                                <el-table-column prop="check" label="检查">
+                                    <el-button @click="checkInventory">检查库存</el-button>
+                                </el-table-column>
+                            </el-table>
+
+                        </div>
+                        <!-- 分页 -->
+                        <div class="red">
+                            <el-pagination background layout="prev, pager, next" :total="30">
+                            </el-pagination>
+                        </div>
+                    </el-tab-pane>
+                </el-tabs>
+            </div>
         </div>
-
-
-
-
-
-        <!-- 分页 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 </template>
 
@@ -245,6 +222,13 @@ export default {
 };
 </script>
 <style scoped>
+.base {
+    width: 100%;
+    height: 500px;
+    /* background-color: aqua; */
+    background-image: url(../../assets/background.jpg);
+}
+
 .first {
     display: flex;
     justify-content: flex-end;
