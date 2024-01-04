@@ -82,7 +82,7 @@ export const constantRoutes = [
             {
                 path: "Index",
                 component: () => import("@/pages/faGe/Index"),
-                name: "fenceHouseIndex",
+                name: "faGeIndex",
                 meta: {
                     title: "栏舍管理-陆江发",
                     icon: "icon_2",
@@ -174,7 +174,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/static-pages/productShow"),
                 name: "productShow",
                 meta: {
-                    title: "产品展示",
+                    title: "产品展示-霍东",
                     icon: "icon_18",
                     affix: true
                 }
@@ -184,7 +184,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/static-pages/orderManagement"),
                 name: "orderManagement",
                 meta: {
-                    title: "订单管理",
+                    title: "订单管理-罗俊杰",
                     icon: "icon_19",
                     affix: true
                 }
@@ -194,7 +194,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/static-pages/inventoryManagement"),
                 name: "inventoryManagement",
                 meta: {
-                    title: "库存管理",
+                    title: "库存管理-叶劲创",
                     icon: "icon_20",
                     affix: true
                 }
@@ -204,7 +204,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/static-pages/logisticsManagement"),
                 name: "logisticsManagement",
                 meta: {
-                    title: "物流管理",
+                    title: "物流管理-陆江发",
                     icon: "icon_15",
                     affix: true
                 }
@@ -214,7 +214,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/static-pages/userManagement"),
                 name: "userManagement",
                 meta: {
-                    title: "用户管理",
+                    title: "用户管理-陈杰",
                     icon: "icon_14",
                     affix: true
                 }
@@ -224,7 +224,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/static-pages/dataAnalysis"),
                 name: "dataAnalysis",
                 meta: {
-                    title: "数据分析",
+                    title: "数据分析-沈达",
                     icon: "icon_13",
                     affix: true
                 }

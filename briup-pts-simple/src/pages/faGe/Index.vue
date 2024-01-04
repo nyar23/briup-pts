@@ -8,17 +8,15 @@
 <template>
   <div>
     <!-- 操作行 -->
-    <div class="options-div">
-      {{ searchParams }}
-      <el-button type="primary" @click="toAdd">添加</el-button>
-      <el-button type="danger" @click="toBatchDelete">批量删除</el-button>
+    <div class="options-div" style="height: 45px;">
+      <el-button type="primary" @click="toAdd" style="height:36px">添加</el-button>
+      <el-button type="danger" @click="toBatchDelete" style="height:36px">批量删除</el-button>
       <el-input style="width:120px" placeholder="请输入名称" v-model="searchParams.fhName" clearable>
       </el-input>
       <el-button type="text" @click="toSearch">搜索</el-button>
     </div>
     <!-- 表格 -->
     <div>
-      {{ multipleSelection }}
       <el-table :data="tableData" border style="width: 100%" @selection-change="handleSelectionChange">
         <el-table-column type="selection" width="55">
         </el-table-column>
@@ -66,14 +64,12 @@
     </div>
     <!-- 分页 -->
     <div class="page-div">
-      {{ pageParams }}
       <el-pagination background :current-page.sync="pageParams.pageNum" :page-sizes="[3, 5, 10, 20]"
         :page-size.sync="pageParams.pageSize" layout="total,prev,pager,next,sizes" :total="total">
       </el-pagination>
     </div>
     <!-- 抽屉 -->
     <el-drawer title="添加栏舍信息" :visible.sync="drawer" direction="rtl" :before-close="handleClose">
-      {{ ruleForm }}
       <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
         <el-form-item label="名称" prop="fhName">
           <el-input v-model="ruleForm.fhName"></el-input>
