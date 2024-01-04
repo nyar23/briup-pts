@@ -14,7 +14,6 @@
                 <el-button type="text">搜索</el-button>
             </div>
         </div>
-
         <!-- 表格 -->
         <div>
             <el-table :data="tableData" style="width: 100%">
@@ -43,6 +42,12 @@
                 </el-table-column>
 
             </el-table>
+
+        </div>
+
+        <!-- 表格 -->
+        <div>
+
         </div>
         <!-- 分页 -->
         <div>
