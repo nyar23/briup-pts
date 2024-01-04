@@ -8,7 +8,7 @@
 
 import { getAuths } from "@/utils/auth";
 // 文件上传地址
-export const upFileUrl = "http://8.134.80.159:7002/UploadControlle/upload";
+export const upFileUrl = "http://8.134.137.44:7002/UploadControlle/upload";
 // 文件阅读服务器
 export const downloadFileUrl = "http://121.224.77.1:9527/";
 

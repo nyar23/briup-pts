@@ -1,3 +1,10 @@
+<!--
+ * @Description: 检疫登记页面
+ * @Author: Ronda
+ * @Date: 2023-08-14 17:20:03
+ * @LastEditors: Ronda
+ * @LastEditTime: 2023-12-21 10:09:48
+-->
 <template>
   <div>
     <!-- 操作行 -->
@@ -115,19 +122,19 @@ export default {
       },
       rules: {
         grBatchId: [
-          { required: true, message: '请选择批次编号', trigger: 'change' }
+          { required: true, message: '请选择批次编号', trigger: 'blur' }
         ],
         grMechanism: [
           { required: true, message: '请输入检疫机构', trigger: 'blur' },
         ],
         bQualified: [
-          { required: true, message: '请选择检疫结果', trigger: 'change' }
+          { required: true, message: '请选择检疫结果', trigger: 'blur' }
         ],
         grImg: [
           { required: true, message: '请上传图片', trigger: 'blur' }
         ],
         grTime: [
-          { required: true, message: '请选择检疫时间', trigger: 'change' }
+          { required: true, message: '请选择检疫时间', trigger: 'blur' }
         ],
       },
       //抽屉 的可见性
