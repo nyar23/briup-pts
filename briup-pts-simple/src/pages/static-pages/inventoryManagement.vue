@@ -5,8 +5,6 @@
 <template>
     <div>
         <!-- 搜索栏 -->
-
-
         <div>
             <el-tabs v-model="activeName" @tab-click="handleClick">
                 <el-tab-pane label="库存查询" name="first">
@@ -273,12 +271,10 @@ export default {
 }
 
 .block {
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
 }
 
 .red {
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
 }
 </style>
