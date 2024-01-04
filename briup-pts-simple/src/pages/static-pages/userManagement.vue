@@ -3,10 +3,12 @@
  * @Author: 
 -->
 <template>
+    <div>
     <!-- 表头搜索 -->
     <div>
 
     </div>
+    
     <!-- 表格 -->
     <div>
 
@@ -15,7 +17,7 @@
     <div>
 
     </div>
-    
+    </div>
     <!-- 抽屉 -->
 </template>
 
