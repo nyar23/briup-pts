@@ -1,6 +1,6 @@
 <!--
  * @Description: 库存管理页面
- * @Author: 
+ * @Author: yjc
 -->
 <template>
     <div>库存管理页面</div>
