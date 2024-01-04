@@ -1,9 +1,6 @@
 <!--
- * @Description: 
- * @Author: Ronda
- * @Date: 2023-08-17 09:23:38
- * @LastEditors: Lxy 2968717544@qq.com
- * @LastEditTime: 2024-01-04 11:29:02
+ * @Description: 产品展示页面
+ * @Author: hd
 -->
 
 <template>

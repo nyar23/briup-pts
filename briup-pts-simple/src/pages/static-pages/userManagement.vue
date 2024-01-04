@@ -3,7 +3,7 @@
  * @Author: cj
 -->
 <template>
-    <div>
+    <div style="background-image: url('https://img1.baidu.com/it/u=2090919131,3262949507&fm=253&fmt=auto&app=138&f=JPEG?w=888&h=500');">
         <!-- 表头搜索 -->
         <div>
             <div class="options-div">
@@ -15,33 +15,141 @@
             </div>
         </div>
         <!-- 卡片 -->
-        <div>
-            <el-row>
-                <el-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
-                    <el-card :body-style="{ padding: '0px' }">
-                        <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
-                            class="image">
-                        <div style="padding: 14px;">
-                            <span>好吃的汉堡</span>
-                            <div class="bottom clearfix">
-                                <time class="time">{{ currentDate }}</time>
-                                <el-button type="text" class="button">操作按钮</el-button>
-                            </div>
+        <div class="card-div">
+            <el-row class="card-row">
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>会员编号：SVIP9999</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
+                        </div>
+                        <div>名字：雷龙</div>
+                        <div>电话：11198798798798</div>
+                        <div>会员积分：999</div>
+                        <img style="width: 250px;height: 300px;"
+                            src="http://8.134.137.44:7002/images/2024041704337335158.jpg" alt="">
+                        <div>
                         </div>
                     </el-card>
                 </el-col>
-                
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>会员编号：SVIP9999</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
+                        </div>
+                        <div>名字：雷龙</div>
+                        <div>电话：11198798798798</div>
+                        <div>会员积分：999</div>
+                        <img style="width: 250px;height: 300px;"
+                            src="http://8.134.137.44:7002/images/2024041704337335158.jpg" alt="">
+                        <div>
+                        </div>
+                    </el-card>
+                </el-col>
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>会员编号：SVIP9999</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
+                        </div>
+                        <div>名字：雷龙</div>
+                        <div>电话：11198798798798</div>
+                        <div>会员积分：999</div>
+                        <img style="width: 250px;height: 300px;"
+                            src="http://8.134.137.44:7002/images/2024041704337335158.jpg" alt="">
+                        <div>
+                        </div>
+                    </el-card>
+                </el-col>
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>会员编号：SVIP9999</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
+                        </div>
+                        <div>名字：雷龙</div>
+                        <div>电话：11198798798798</div>
+                        <div>会员积分：999</div>
+                        <img style="width: 250px;height: 300px;"
+                            src="http://8.134.137.44:7002/images/2024041704337335158.jpg" alt="">
+                        <div>
+                        </div>
+                    </el-card>
+                </el-col>
             </el-row>
-
+            <el-row class="card-row">
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>会员编号：SVIP9999</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
+                        </div>
+                        <div>名字：雷龙</div>
+                        <div>电话：11198798798798</div>
+                        <div>会员积分：999</div>
+                        <img style="width: 250px;height: 300px;"
+                            src="http://8.134.137.44:7002/images/2024041704337948584.jpg" alt="">
+                        <div>
+                        </div>
+                    </el-card>
+                </el-col>
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>会员编号：SVIP9999</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
+                        </div>
+                        <div>名字：雷龙</div>
+                        <div>电话：11198798798798</div>
+                        <div>会员积分：999</div>
+                        <img style="width: 250px;height: 300px;"
+                            src="http://8.134.137.44:7002/images/2024041704337948584.jpg" alt="">
+                        <div>
+                        </div>
+                    </el-card>
+                </el-col>
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>会员编号：SVIP9999</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
+                        </div>
+                        <div>名字：雷龙</div>
+                        <div>电话：11198798798798</div>
+                        <div>会员积分：999</div>
+                        <img style="width: 250px;height: 300px;"
+                            src="http://8.134.137.44:7002/images/2024041704337948584.jpg" alt="">
+                        <div>
+                        </div>
+                    </el-card>
+                </el-col>
+                <el-col :span="6">
+                    <el-card class="box-card">
+                        <div slot="header" class="clearfix">
+                            <span>会员编号：SVIP9999</span>
+                            <el-button style="float: right; padding: 3px 0" type="text">管理</el-button>
+                        </div>
+                        <div>名字：雷龙</div>
+                        <div>电话：11198798798798</div>
+                        <div>会员积分：999</div>
+                        <img style="width: 250px;height: 300px;"
+                            src="http://8.134.137.44:7002/images/2024041704337948584.jpg" alt="">
+                        <div>
+                        </div>
+                    </el-card>
+                </el-col>
+            </el-row>
         </div>
 
-        <!-- 表格 -->
-        <div>
-
-        </div>
         <!-- 分页 -->
         <div>
-
+            <div class="block">
+                <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
+                    :current-page="currentPage4" :page-sizes="[100, 200, 300, 400]" :page-size="100"
+                    layout="total, sizes, prev, pager, next, jumper" :total="400">
+                </el-pagination>
+            </div>
         </div>
     </div>
     <!-- 抽屉 -->
@@ -71,4 +179,11 @@ export default {
     /* 选择所有子代 > 子代 *所有*/
     margin-left: 10px;
 }
-</style>
+
+.card-row>* {
+    padding: 10px;
+}
+
+.card-div {
+    padding: 10px;
+}</style>
