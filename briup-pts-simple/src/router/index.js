@@ -50,7 +50,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/dashboard/Index"),
                 name: "dashboard",
                 meta: {
-                    title: "数据大屏",
+                    title: "数据大屏-沈达",
                     icon: "icon_20",
                     affix: true
                 }
@@ -67,8 +67,25 @@ export const constantRoutes = [
                 component: () => import("@/pages/fenceHouse/Index"),
                 name: "fenceHouseIndex",
                 meta: {
-                    title: "栏舍管理",
+                    title: "栏舍管理-陈杰",
                     icon: "icon_1",
+                    affix: true
+                }
+            }
+        ]
+    },
+    {
+        path: "/faGe",
+        component: Layout,
+        redirect: "/faGe/Index",
+        children: [
+            {
+                path: "Index",
+                component: () => import("@/pages/faGe/Index"),
+                name: "fenceHouseIndex",
+                meta: {
+                    title: "栏舍管理-陆江发",
+                    icon: "icon_2",
                     affix: true
                 }
             }
@@ -84,7 +101,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/hurdles/Index"),
                 name: "hurdlesIndex",
                 meta: {
-                    title: "栏圈管理",
+                    title: "栏圈管理-叶劲创",
                     icon: "icon_11",
                     affix: true
                 }
@@ -101,7 +118,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/animalManage/Index"),
                 name: "animalManageIndex",
                 meta: {
-                    title: "动物管理",
+                    title: "动物管理-霍东",
                     icon: "icon_3",
                     affix: true
                 }
@@ -118,7 +135,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/diseaseRecord/Index"),
                 name: "diseaseRecordIndex",
                 meta: {
-                    title: "病症记录",
+                    title: "病症记录-罗俊杰",
                     icon: "icon_14",
                     affix: true
                 }
@@ -135,7 +152,7 @@ export const constantRoutes = [
                 component: () => import("@/pages/quarantineRegistration/Index"),
                 name: "quarantineRegistrationIndex",
                 meta: {
-                    title: "检疫登记",
+                    title: "检疫登记-陆江发",
                     icon: "icon_16",
                     affix: true
                 }
