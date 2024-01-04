@@ -426,7 +426,7 @@ export default {
 }
 
 .parent {
-    height: 200px;
+    height: 135px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
