@@ -6,6 +6,14 @@
     <div>库存管理页面</div>
 </template>
 
+
+
+
+
+
+
+
+
 <script>
 export default {
     data() {
