@@ -149,7 +149,7 @@ export default {
           { required: true, message: '请输入栏舍名称', trigger: 'blur' },
         ],
         fhTime: [
-          { required: true, message: '请选择创建时间', trigger: 'change' }
+          { required: true, message: '请选择创建时间', trigger: 'blur' }
         ],
       }
     };
