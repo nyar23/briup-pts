@@ -3,7 +3,20 @@
  * @Author: 
 -->
 <template>
-    <div>用户管理页面</div>
+    <!-- 表头搜索 -->
+    <div>
+
+    </div>
+    <!-- 表格 -->
+    <div>
+
+    </div>
+    <!-- 分页 -->
+    <div>
+
+    </div>
+    
+    <!-- 抽屉 -->
 </template>
 
 <script>
