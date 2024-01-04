@@ -3,7 +3,7 @@
  * @Author: cj
 -->
 <template>
-    <div style="background-image: url('https://img1.baidu.com/it/u=2090919131,3262949507&fm=253&fmt=auto&app=138&f=JPEG?w=888&h=500');">
+    <div style="background-image: url('http://8.134.137.44:7002/images/2024041704350162775.jpg');">
         <!-- 表头搜索 -->
         <div>
             <div class="options-div">
@@ -146,7 +146,7 @@
         <div>
             <div class="block">
                 <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
-                    :current-page="currentPage4" :page-sizes="[100, 200, 300, 400]" :page-size="100"
+                    :current-page="currentPage4" :page-sizes="[8, 16, 32, 64]" :page-size="100"
                     layout="total, sizes, prev, pager, next, jumper" :total="400">
                 </el-pagination>
             </div>
@@ -173,6 +173,7 @@ export default {
     display: flex;
     justify-content: end;
     padding: 10px;
+    opacity: 0.8
 }
 
 .options-div>* {
@@ -184,6 +185,16 @@ export default {
     padding: 10px;
 }
 
+.block{
+     display: flex;
+    justify-content: end;
+    opacity: 0.8;
+}
 .card-div {
     padding: 10px;
-}</style>
+    background-color: rgba(255, 255, 255, 0.5); /* 设置背景颜色为半透明 */
+  opacity: 1;
+}
+
+
+</style>
