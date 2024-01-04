@@ -1,6 +1,6 @@
 <!--
- * @Description: cj
- * @Author: 
+ * @Description: 用户管理
+ * @Author: cj
 -->
 <template>
     <div>
@@ -14,34 +14,24 @@
                 <el-button type="text">搜索</el-button>
             </div>
         </div>
-        <!-- 表格 -->
+        <!-- 卡片 -->
         <div>
-            <el-table :data="tableData" style="width: 100%">
-                <el-table-column type="selection" width="55">
-                </el-table-column>
-
-                <el-table-column label="序号" type="index" width="48">
-                </el-table-column>
-                <el-table-column prop="fhTime" label="入会时间" width="200">
-                </el-table-column>
-                <el-table-column prop="fhId" label="会员编号" width="200">
-                </el-table-column>
-                <el-table-column prop="fhName" label="名字" width="150">
-                </el-table-column>
-                <el-table-column prop="fhName" label="电话号码" width="200">
-                </el-table-column>
-                <el-table-column prop="fhDesc" label="描述">
-                </el-table-column>
-
-                <el-table-column fixed="right" label="操作" width="150">
-                    <template slot-scope="scope">
-                        <el-button type="text" size="small">移除</el-button>
-                        <el-button type="text" size="small">修改</el-button>
-                        <el-button type="text" size="small">详情</el-button>
-                    </template>
-                </el-table-column>
-
-            </el-table>
+            <el-row>
+                <el-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
+                    <el-card :body-style="{ padding: '0px' }">
+                        <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+                            class="image">
+                        <div style="padding: 14px;">
+                            <span>好吃的汉堡</span>
+                            <div class="bottom clearfix">
+                                <time class="time">{{ currentDate }}</time>
+                                <el-button type="text" class="button">操作按钮</el-button>
+                            </div>
+                        </div>
+                    </el-card>
+                </el-col>
+                
+            </el-row>
 
         </div>
 
