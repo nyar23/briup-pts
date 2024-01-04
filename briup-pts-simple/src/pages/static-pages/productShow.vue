@@ -14,8 +14,6 @@
                 <span>特色农产品销售</span>
             </div>
 
-
-
             <el-menu :default-active="activeIndex" class="custom-menu" mode="horizontal" @select="handleSelect"
                 style="width:900px">
                 <div class="container">
@@ -324,7 +322,7 @@ export default {
 
             images: [
                 { imageUrl: 'http://8.134.137.44:7002/images/2024041704354903308.jpg' },
-                { imageUrl: 'http://8.134.137.44:7002/images/2024041704354936974.jpg' },
+                { imageUrl: 'http://8.134.137.44:7002/images/2024041704360541232.jpg' },
                 { imageUrl: 'http://8.134.137.44:7002/images/2024041704354954394.jpg' },
             ]
         };
